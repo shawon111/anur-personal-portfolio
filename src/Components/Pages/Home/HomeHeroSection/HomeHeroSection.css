@@ -1,0 +1,169 @@
+.home-hero{
+    background: linear-gradient(90deg,#142e95,#3758d2);
+}
+.home-hero-wrapper{
+    width: 95%;
+    margin: auto;
+}
+.social-media{
+    width: 5%;
+}
+.main-content{
+    width: 45%;
+}
+.animated-image{
+    width: 50%;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between!important;
+    height: 300px;
+}
+
+.styled-link a::before{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 1px;
+    background: var(--brandColor);
+    content: "";
+
+}
+.social-link{
+    transform: rotate(-90deg);
+}
+
+.social-link a{
+    font-size: 16px;
+}
+
+.social-link a:hover{
+    color: var(--brandColor)!important;
+    transition: all .3s;
+}
+
+.animated-image{
+    text-align: center;
+    position: relative;
+}
+
+.animated-image .hero-img img{
+    width: 60%;
+    animation: bouncingImage 3s linear infinite;
+    overflow: hidden;
+}
+.hero-img{
+    z-index: 10!important;
+    position: relative;
+}
+/* rounds behind the image */
+
+.round-1{
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.288);
+    position: absolute;
+    top:0;
+    left: 30px;
+    animation: animatedCircle 60s linear infinite;
+}
+.round-2{
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+    position: absolute;
+    top:50px;
+    left: 80px;
+}
+.round-3{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.288);
+    position: absolute;
+    top:100px;
+    left: 130px;
+    animation: animatedCircle 60s linear infinite;
+}
+
+.hero-heading{
+    /* font-family: 'nunito', sans-serif; */
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.hero-heading span{
+    display: block;
+}
+.hero-heading span:nth-child(1){
+    margin-left: 30px;
+}
+.hero-heading span:nth-child(2){
+    margin-left: 160px;
+}
+.hero-heading span:nth-child(3){
+    margin-left: 280px;
+}
+
+.hero-cta{
+    position: relative;
+}
+
+.hero-cta a{
+    color: var(--brandColor);
+    font-size: 22px;
+    font-family: 'nunito', sans-serif;
+}
+.hero-cta a::before{
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: var(--brandColor);
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}
+.hero-cta a:hover::before{
+    right: 27%;
+    transition: all .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**** animation ****/
+@keyframes bouncingImage{
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(15px) translateX(7px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes animatedCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

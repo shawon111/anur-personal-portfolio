@@ -3,10 +3,12 @@ import { Container } from 'react-bootstrap';
 import "./HomeHeroSection.css";
 import heroImage from '../../../../images/home-hero-girl.png';
 import { Link } from 'react-router-dom';
+import Header from '../../../GlobalComponents/Header/Header';
 
 const HomeHeroSection = () => {
     return (
-        <section className='home-hero py-5'>
+        <section className='home-hero'>
+            <Header></Header>
             <div className='home-hero-wrapper'>
                 <div className="home-hero-container d-flex justify-content-center align-items-center">
                     <div className="social-media">

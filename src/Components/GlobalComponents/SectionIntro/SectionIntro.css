@@ -1,0 +1,31 @@
+.section-intro-subheading{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section-intro-heading{
+    font-weight: 700;
+    color: var(--primaryColor);
+    font-size: 55px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.intro-subheading-container{
+    position: relative;
+}
+
+.section-intro-subheading::before{
+    content: "";
+    height: 2.5px;
+    width: 35px;
+    background-color: var(--brandColor);
+    position: absolute;
+    top: 40%;
+    left: 39.5%;
+}

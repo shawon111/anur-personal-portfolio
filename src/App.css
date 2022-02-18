@@ -38,3 +38,11 @@ a{
 li{
   list-style: none;
 }
+
+/* section background text  */
+.section-bg-text{
+  font-size: 200px;
+  text-align: center;
+  opacity: .04;
+  margin-bottom: -150px;
+}

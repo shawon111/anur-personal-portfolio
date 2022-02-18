@@ -20,12 +20,12 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="m-auto">
-                        <div className="nav-link-container"><NavLink to="/" activeClassName="active-route" className="nav-link">Home</NavLink></div>
-                        <div className="nav-link-container"><NavLink to="/about" activeClassName="active-route" className="nav-link">About</NavLink></div>
-                        <div className="nav-link-container"><NavLink to="/portfolio" activeClassName="active-route" className="nav-link">Portfolio</NavLink></div>
-                        <div className="nav-link-container"><NavLink to="/services" activeClassName="active-route" className="nav-link">Services</NavLink></div>
-                        <div className="nav-link-container"><NavLink to="/blog" activeClassName="active-route" className="nav-link">Blog</NavLink></div>
-                        <div className="nav-link-container"><NavLink to="/contact" activeClassName="active-route" className="nav-link">Contact</NavLink></div>
+                        <div className="nav-link-container"><NavLink to="/" className="nav-link">Home</NavLink></div>
+                        <div className="nav-link-container"><NavLink to="/about" className="nav-link">About</NavLink></div>
+                        <div className="nav-link-container"><NavLink to="/portfolio" className="nav-link">Portfolio</NavLink></div>
+                        <div className="nav-link-container"><NavLink to="/services" className="nav-link">Services</NavLink></div>
+                        <div className="nav-link-container"><NavLink to="/blog" className="nav-link">Blog</NavLink></div>
+                        <div className="nav-link-container"><NavLink to="/contact" className="nav-link">Contact</NavLink></div>
                     </Nav>
                     <Nav>
                         {/* header search bar */}

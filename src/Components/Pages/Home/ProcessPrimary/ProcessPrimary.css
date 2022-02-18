@@ -1,0 +1,64 @@
+.process-icon-container{
+    background-color: #e8f3fd;
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.process-icon-wrapper{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.process-primary-icon{
+    background-color: var(--brandColor);
+    left: 15px;
+    top: 15px;
+}
+
+.process-secondary-icon{
+    background-color: var(--secondaryColor);
+    bottom: 15px;
+    right: 15px;
+}
+
+.icon-thumb-container{
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 18.8px 1.2px rgb(99 102 187 / 10%);
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+}
+
+.primary-icon-thumb-container{
+    bottom: 20px;
+    right: 30px;
+}
+
+.secondary-icon-thumb-container{
+    top: 20px;
+    left: 30px;
+}
+
+.icon-thumb-container span {
+    font-size: 35px;
+    font-weight: 900;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-color: #8188a9;
+}
+
+.process-title h4{
+    color: var(--primaryColor);
+}

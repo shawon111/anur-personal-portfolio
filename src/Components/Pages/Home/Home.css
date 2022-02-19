@@ -2,3 +2,87 @@
     padding: 80px 0px;
     position: relative;
 }
+
+.about-services-section{
+    padding: 80px 0px;
+    position: relative;
+}
+
+.our-services{
+    padding-top: 80px;
+}
+
+
+.about-list-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.about-list-container ul li::before{
+    content: '+';
+    color: var(--brandColor);
+    margin-right: 10px;
+}
+
+.about-img img {
+    border-radius: 50%;
+    margin-top: 8%;
+}
+
+.about-img{
+    position: relative;
+    z-index: 2;
+}
+
+.about-img-col-container{
+    position: relative;
+}
+
+.about-big-circle{
+    width: 380px;
+    height: 380px;
+    background-color: var(--brandColor);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .08;
+}
+
+.about-small-circle{
+    height: 220px;
+    width: 220px;
+    background-color: rgb(224, 23, 23);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+    z-index: 1;
+    opacity: .05;
+}
+
+.experience-text{
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    padding: 15px 25px;
+    background-color: var(--secondaryColor);
+}
+
+.experience-text h5{
+    padding: 0;
+    margin: 0;
+}
+
+.half-circle-bg{
+    width: 300px;
+    height: 500px;
+    background-color: var(--brandColor);
+    border-top-left-radius: 400px;
+    border-bottom-left-radius: 400px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    opacity: .05
+}

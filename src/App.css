@@ -39,6 +39,29 @@ li{
   list-style: none;
 }
 
+.brand-btn{
+  border: 1px solid var(--brandColor);
+  border-radius: 0;
+  padding: 15px 45px;
+  background-color: transparent;
+}
+
+.brand-btn:hover{
+  background-color: var(--brandColor);
+  transition: all .3s;
+}
+
+.brand-btn:hover a{
+  color: #fff;
+  transition: all .3s;
+}
+
+.brand-btn a{
+  color: var(--brandColor);
+  font-weight: 600;
+  font-size: 18px;
+}
+
 /* section background text  */
 .section-bg-text{
   font-size: 200px;

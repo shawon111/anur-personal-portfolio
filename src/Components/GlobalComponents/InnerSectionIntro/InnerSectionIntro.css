@@ -1,0 +1,28 @@
+.inner-intro-subheading{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+    font-size: 17px;
+    text-align: start;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.inner-intro-subheading::before{
+    content: "";
+    height: 2.5px;
+    width: 35px;
+    background-color: var(--brandColor);
+    position: absolute;
+    top: 40%;
+    left: -42px;
+}
+.inner-intro-heading{
+    font-weight: 700;
+    color: var(--primaryColor);
+    font-size: 47px;
+    text-align: start;
+}
+.inner-intro-heading span {
+    color: var(--brandColor);
+}

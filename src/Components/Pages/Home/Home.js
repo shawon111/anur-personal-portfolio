@@ -23,6 +23,7 @@ import bg3 from "../../../images/offer-bg-3.png";
 import bg4 from "../../../images/offer-bg-4.png";
 import bg5 from "../../../images/offer-bg-5.png";
 import ServiceOffer from './ServiceOffer/ServiceOffer';
+import SingleStatistic from './SingleStatistic/SingleStatistic';
 
 const Home = () => {
 
@@ -32,7 +33,14 @@ const Home = () => {
         {offer: 'Web Design', link: '/', icon: offer3, bg: bg3, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
         {offer: 'Digital Marketing', link: '/', icon: offer4, bg: bg4, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
         {offer: 'Social Media Marketing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
-        {offer: 'Content Writing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
+        {offer: 'Content Writing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."}
+    ];
+
+    const statistics = [
+        {title: "Successful Projects", number: "82"},
+        {title: "Satisfied Clients", number: "45"},
+        {title: "Years of Experience", number: "15"},
+        {title: "Award Winning", number: "37"}
     ]
 
     return (
@@ -161,6 +169,20 @@ const Home = () => {
                 </Container>
                 <div className="half-circle-bg">
                 </div>
+            </section>
+
+            {/* statistics section */}
+            <section className="statistics">
+                <Container>
+                    <Row>
+                        {
+                            statistics.map(statistic => <SingleStatistic
+                            key={statistic.number}
+                            statistic={statistic}
+                            />)
+                        }
+                    </Row>
+                </Container>
             </section>
         </div>
     );

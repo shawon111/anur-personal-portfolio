@@ -86,3 +86,8 @@
     right: 0;
     opacity: .05
 }
+
+.statistics{
+    padding: 80px;
+    background-color: var(--darkPrimary);
+}

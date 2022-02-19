@@ -1,3 +1,7 @@
+.primary-header{
+    background-color: transparent;
+    padding-bottom: 20px;
+}
 .logo-img{
     width: 70%;
 }
@@ -54,6 +58,16 @@
     transition: all .3s!important;
 }
 
+/* sticky header effects */
+.sticky-header{
+    background-color: var(--secondaryColor);
+    box-shadow: 0 1px 5px #0000001a;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* responsive header styles */
 @media only screen and (max-width: 992px){
     .nav-link:hover::before{
         width: 0px!important;

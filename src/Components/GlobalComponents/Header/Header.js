@@ -1,14 +1,27 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Container, FormControl, InputGroup, Nav, Navbar, OverlayTrigger, Popover } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../images/anur-logo.png';
 import './Header.css';
 
 const Header = () => {
+    //scrolling header effect
+    const [isSticky, setIsSticky] = useState(false);
+
+    const stickyEffect = () => {
+        if(window.scrollY >= 90){
+            setIsSticky(true);
+        }else{
+            setIsSticky(false)
+        }
+    }
+
+    window.addEventListener("scroll", stickyEffect);
+
     return (
-        <Navbar collapseOnSelect expand="lg" className="primary-header pt-3" variant="dark">
+        <Navbar collapseOnSelect expand="lg" className={isSticky ? "primary-header pt-3 sticky-header" : "primary-header pt-3"} variant="dark">
             <Container>
                 <Navbar>
                     <div className="logo">

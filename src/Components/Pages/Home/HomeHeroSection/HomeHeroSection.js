@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import "./HomeHeroSection.css";
 import heroImage from '../../../../images/home-hero-girl.png';
 import { Link } from 'react-router-dom';

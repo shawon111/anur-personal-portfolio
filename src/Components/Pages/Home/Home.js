@@ -24,6 +24,7 @@ import bg4 from "../../../images/offer-bg-4.png";
 import bg5 from "../../../images/offer-bg-5.png";
 import ServiceOffer from './ServiceOffer/ServiceOffer';
 import SingleStatistic from './SingleStatistic/SingleStatistic';
+import OurProjects from './OurProjects/OurProjects';
 
 const Home = () => {
 
@@ -61,25 +62,25 @@ const Home = () => {
                         heading="how we do our work plan"
                     >
                     </SectionIntro>
-                    <Row className='pt-5'>
-                        <Col xs={12} sm={12} md={6} lg={3}><ProcessPrimary
+                    <Row className='pt-5 work-process-container'>
+                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}><ProcessPrimary
                             icon={icon1}
                             iconThumb="1"
                             processName="Creating a Concept"
                         /></Col>
-                        <Col xs={12} sm={12} md={6} lg={3}>
+                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}>
                             <ProcessSecondary
                                 icon={icon2}
                                 iconThumb="2"
                                 processName="Budget Planning"
                             />
                         </Col>
-                        <Col xs={12} sm={12} md={6} lg={3}><ProcessPrimary
+                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}><ProcessPrimary
                             icon={icon3}
                             iconThumb="3"
                             processName="Design Process"
                         /></Col>
-                        <Col xs={12} sm={12} md={6} lg={3}>
+                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}>
                             <ProcessSecondary
                                 icon={icon4}
                                 iconThumb="4"
@@ -95,8 +96,8 @@ const Home = () => {
                 <Container>
                     {/* about */}
                     <div className="about-us">
-                        <Row className='align-items-center'>
-                            <Col xs={12} sm={12} md={6} lg="6">
+                        <Row className='align-items-center about-us-container'>
+                            <Col xs={12} sm={12} md={12} lg="6">
                                 <div className="about-img-col-container">
                                     <div className="about-img text-center">
                                         <img src={aboutImg} alt="about-banner" />
@@ -108,7 +109,7 @@ const Home = () => {
                                     <div className="about-small-circle"></div>
                                 </div>
                             </Col>
-                            <Col xs={12} sm={12} md={6} lg="6">
+                            <Col className='about-texts' xs={12} sm={12} md={12} lg="6">
                                 <div className="about-contents">
                                     <div className="section-bg-text-container">
                                         <h2 className="section-bg-text text-start">About</h2>
@@ -182,6 +183,12 @@ const Home = () => {
                             />)
                         }
                     </Row>
+                </Container>
+            </section>
+            {/* our projects section */}
+            <section className='our-projects'>
+                <Container>
+                        <OurProjects></OurProjects>
                 </Container>
             </section>
         </div>

@@ -1,0 +1,185 @@
+/**** responsive codes of the whole webste ****/
+
+/* responsive codes for small laptops */
+@media only screen and (max-width: 1024px){
+.hero-heading{
+    font-size: 80px!important;
+}
+.hero-cta a::before{
+    width: 70px!important;
+    right: 40%!important;
+}
+.round-1{
+    width: 450px!important;
+    height: 450px!important;
+}
+.round-2{
+    width: 350px!important;
+    height: 350px!important;
+}
+.round-3{
+    width: 250px!important;
+    height: 250px!important;
+}
+
+.section-bg-text{
+    font-size: 150px!important;
+}
+.section-intro-subheading::before{
+    left: 35%!important;
+}
+}
+
+/* responsive codes for tablet devices */
+@media only screen and (max-width: 992px){
+.hero-heading{
+        font-size: 60px!important;
+    }
+.hero-heading span:nth-child(2){
+    margin-left: 90px!important;
+}
+.hero-heading span:nth-child(3){
+    margin-left: 160px!important;
+}
+
+.round-1{
+    width: 350px!important;
+    height: 350px!important;
+}
+.round-2{
+    width: 250px!important;
+    height: 250px!important;
+}
+.round-3{
+    width: 150px!important;
+    height: 150px!important;
+}
+.social-links{
+    margin-top: 80px;
+}
+.hero-cta a::before{
+    width: 50px!important;
+    right: 50%!important;
+    height: 2px!important;
+}
+.hero-cta a{
+    font-size: 18px!important;
+}
+.section-bg-text{
+    font-size: 120px!important;
+}
+.section-intro-subheading::before{
+    left: 30%!important;
+}
+.section-intro-heading{
+    font-size: 48px!important;
+}
+.work-process-item{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+}
+.about-services-section{
+    padding-top: 0!important;
+}
+.about-texts{
+    padding-bottom: 50px!important;
+}
+.about-us-container{
+    flex-direction: column-reverse;
+}
+.inner-intro-heading{
+    font-size: 44px!important;
+}
+
+}
+
+/* responsive codes for mobile devices */
+@media only screen and (max-width: 576px){
+    .home-hero-container{
+        flex-direction: column-reverse;
+    }
+    .main-content{
+        width: 100%!important;
+    }
+    .social-media{
+        width: 100%!important;
+    }
+    .animated-image{
+        width: 100%!important;
+        margin-bottom: 30px;
+    }
+    .social-links{
+        flex-direction: row!important;
+        height: auto!important;
+        margin-top: 20px!important;
+        padding-left: 0px!important;
+        justify-content: space-around!important;
+    }
+    .social-link{
+        transform: rotate(0deg)!important;
+    }
+    .hero-heading{
+        font-size: 40px!important;
+    }
+    .hero-cta{
+        text-align: center!important;
+    }
+    .styled-link a::before{
+        width: 20px!important;
+        left: -50%!important;
+    }
+    .hero-cta a::before{
+        left: 13%!important;
+    }
+    .round-1{
+        left: 0!important;
+    }
+    .round-2{
+        left: 50px!important;
+    }
+    .round-3{
+        left: 90px!important;
+    }
+
+.section-intro-subheading{
+    font-size: 15px!important;
+}
+.section-intro-subheading::before{
+    left: 13%!important;
+}
+.section-bg-text{
+    font-size: 90px!important;
+}
+.section-intro-heading{
+    font-size: 38px!important;
+}
+.inner-intro-subheading{
+    font-size: 15px!important;
+}
+.inner-intro-subheading::before{
+    width: 15px!important;
+    left: -20px!important;
+}
+.inner-intro-heading{
+    font-size: 34px!important;
+}
+.brand-btn{
+    padding: 12px 30px!important;
+}
+.about-img img{
+    margin-top: 0!important;
+    width: 85%!important;
+
+}
+.about-big-circle{
+    width: 250px!important;
+    height: 250px!important;
+}
+.about-small-circle{
+    width: 180px!important;
+    height: 180px!important;
+}
+.half-circle-bg{
+    display: none;
+}
+}

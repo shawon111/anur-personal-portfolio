@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import './Responsive.css';
 import About from './Components/Pages/About/About';
 import Blog from './Components/Pages/Blog/Blog';
 import Contact from './Components/Pages/Contact/Contact';
@@ -11,6 +12,7 @@ import Register from './Components/Pages/Register/Register';
 import Service from './Components/Pages/Service/Service';
 import SingleProject from './Components/Pages/SingleProject/SingleProject';
 import SingleService from './Components/Pages/SingleService/SingleService';
+import 'swiper/css/bundle';
 
 function App() {
   return (

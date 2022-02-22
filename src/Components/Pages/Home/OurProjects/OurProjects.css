@@ -1,0 +1,13 @@
+.our-project-subtitle h6{
+    color: #007a6c;
+    font-size: 18px;
+    font-weight: 600;
+}
+.our-project-title h3{
+    font-size: 37px;
+    color: var(--primaryColor);
+}
+.our-project-heading{
+    margin-bottom: -70px;
+}
+/* responsiveness of the slider */

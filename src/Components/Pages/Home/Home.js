@@ -25,23 +25,24 @@ import bg5 from "../../../images/offer-bg-5.png";
 import ServiceOffer from './ServiceOffer/ServiceOffer';
 import SingleStatistic from './SingleStatistic/SingleStatistic';
 import OurProjects from './OurProjects/OurProjects';
+import TestimonialSlider from './TestimonialSlider/TestimonialSlider';
 
 const Home = () => {
 
     const services = [
-        {offer: 'Design & Planning', link: '/', icon: offer1, bg: bg1, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
-        {offer: 'Graphic Design', link: '/', icon: offer2, bg: bg2, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
-        {offer: 'Web Design', link: '/', icon: offer3, bg: bg3, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
-        {offer: 'Digital Marketing', link: '/', icon: offer4, bg: bg4, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
-        {offer: 'Social Media Marketing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."},
-        {offer: 'Content Writing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida."}
+        { offer: 'Design & Planning', link: '/', icon: offer1, bg: bg1, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida." },
+        { offer: 'Graphic Design', link: '/', icon: offer2, bg: bg2, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida." },
+        { offer: 'Web Design', link: '/', icon: offer3, bg: bg3, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida." },
+        { offer: 'Digital Marketing', link: '/', icon: offer4, bg: bg4, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida." },
+        { offer: 'Social Media Marketing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida." },
+        { offer: 'Content Writing', link: '/', icon: offer5, bg: bg5, texts: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ultrices gravida." }
     ];
 
     const statistics = [
-        {title: "Successful Projects", number: "82"},
-        {title: "Satisfied Clients", number: "45"},
-        {title: "Years of Experience", number: "15"},
-        {title: "Award Winning", number: "37"}
+        { title: "Successful Projects", number: "82" },
+        { title: "Satisfied Clients", number: "45" },
+        { title: "Years of Experience", number: "15" },
+        { title: "Award Winning", number: "37" }
     ]
 
     return (
@@ -115,9 +116,9 @@ const Home = () => {
                                         <h2 className="section-bg-text text-start">About</h2>
                                     </div>
                                     <InnerSectionIntro
-                                    subheading="about us"
-                                    heading="We are more than just a"
-                                    brandText="digital agency."
+                                        subheading="about us"
+                                        heading="We are more than just a"
+                                        brandText="digital agency."
                                     >
                                     </InnerSectionIntro>
                                     <p className='my-4 text-secondary'>We create award-winning websites, remarkable brands and cutting-edge apps. Nullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh.</p>
@@ -152,15 +153,15 @@ const Home = () => {
                                 </h2>
                             </div>
                             <SectionIntro
-                            subheading="our services"
-                            heading="what can we offer"
+                                subheading="our services"
+                                heading="what can we offer"
                             ></SectionIntro>
                             <div className="our-service-offers pt-5">
                                 <Row>
                                     {
                                         services.map(service => <ServiceOffer
-                                        key={service.offer}
-                                        service={service}>
+                                            key={service.offer}
+                                            service={service}>
                                         </ServiceOffer>)
                                     }
                                 </Row>
@@ -178,8 +179,8 @@ const Home = () => {
                     <Row>
                         {
                             statistics.map(statistic => <SingleStatistic
-                            key={statistic.number}
-                            statistic={statistic}
+                                key={statistic.number}
+                                statistic={statistic}
                             />)
                         }
                     </Row>
@@ -188,7 +189,49 @@ const Home = () => {
             {/* our projects section */}
             <section className='our-projects'>
                 <Container>
-                        <OurProjects></OurProjects>
+                    <OurProjects></OurProjects>
+                </Container>
+            </section>
+            {/* testimonial section */}
+            <section className="testimonial">
+                <Container>
+                    <div className="testimonial-container">
+                        <Row>
+                            <Col xs={12} sm={12} md={5} lg={4} className="testimonial-heading" >
+                                <InnerSectionIntro
+                                    subheading="testimonial"
+                                    heading="What People Says"
+                                ></InnerSectionIntro>
+                                <p className='me-5 mt-3 text-secondary'>We met years ago at an advertising agency where we learned a ton of dos and some don’ts.</p>
+                                <button className='btn brand-btn brand-bg-btn mt-2'>
+                                    <Link to="/">Contact Us</Link>
+                                </button>
+                            </Col>
+                            <Col xs={12} sm={12} md={7} lg={8} className="testimonial-slider" >
+                                <TestimonialSlider></TestimonialSlider>
+                            </Col>
+                        </Row>
+                    </div>
+                </Container>
+            </section>
+            {/* help-ticket section */}
+            <section className="help-ticket">
+                <Container>
+                    <div className="help-ticket-contents">
+                        <Row className='align-items-center'>
+                            <Col xs={12} sm={12} md={8} lg={6}>
+                                <h3 className='text-white mb-4'>Have a defferent question?
+                                </h3>
+                                <p className='text-white m-0'>There are many variations of passages of Lorem Ipsum <br/>available, but the majority have suffered alteration.
+                                </p>
+                            </Col>
+                            <Col xs={12} sm={12} md={4} lg={6}>
+                                <div className="ticket-cta-btn text-end">
+                                    <button className='btn brand-btn border-0'><Link to="/">Submit A Ticket</Link></button>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
                 </Container>
             </section>
         </div>

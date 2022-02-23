@@ -1,0 +1,26 @@
+.profile-name h4{
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    font-size: 21px;
+    font-weight: 700;
+}
+.profile-job h5{
+    font-weight: 400;
+    font-size: 19px;
+}
+.slide-testimony{
+    position: relative;
+}
+.slide-testimony::after{
+    content: '';
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 40px;
+        margin-top: 0;
+        width: 0;
+        height: 0;
+        border-color: #fff transparent transparent;
+        border-style: solid;
+        border-width: 25px 25px 0px;
+}

@@ -43,7 +43,7 @@ const OurProjects = () => {
                 navigation={true}
                 autoplay={{
                     delay: 2500,
-                    disableOnInteraction: true
+                    disableOnInteraction: false
                 }}
                 breakpoints={{ 
                     1024: {
@@ -56,8 +56,6 @@ const OurProjects = () => {
                       slidesPerView: 1,
                     }
                   }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {
                     projectSlides.map(singleSlide => <SwiperSlide>

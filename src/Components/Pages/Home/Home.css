@@ -94,3 +94,26 @@
 .our-projects{
     padding: 80px 0px;
 }
+.testimonial-heading .inner-intro-heading{
+    font-size: 36px;
+}
+.testimonial{
+    padding: 100px 0px;
+    background-color: #f9f5f3;
+}
+.help-ticket{
+    padding: 100px 0px;
+}
+
+.help-ticket-contents{
+    background: linear-gradient(to top left, #1833a2, #3758d2 77% );
+    padding: 80px;
+}
+.ticket-cta-btn button{
+    background-color: #fff;
+}
+.ticket-cta-btn button a{
+    color: rgb(41, 39, 39);
+    font-weight: 600;
+    font-size: 17px;
+}

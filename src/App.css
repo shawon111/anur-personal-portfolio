@@ -61,6 +61,13 @@ li{
   font-weight: 600;
   font-size: 18px;
 }
+.brand-bg-btn{
+  background-color: var(--brandColor);
+}
+
+.brand-bg-btn a{
+  color: #fff;
+}
 
 /* section background text  */
 .section-bg-text{

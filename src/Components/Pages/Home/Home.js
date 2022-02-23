@@ -26,6 +26,11 @@ import ServiceOffer from './ServiceOffer/ServiceOffer';
 import SingleStatistic from './SingleStatistic/SingleStatistic';
 import OurProjects from './OurProjects/OurProjects';
 import TestimonialSlider from './TestimonialSlider/TestimonialSlider';
+import thumb1 from '../../../images/project-5.jpg';
+import thumb2 from '../../../images/project-4.jpg';
+import thumb3 from '../../../images/project-6.jpg';
+import BlogCard from '../../GlobalComponents/BlogCard/BlogCard';
+import Footer from '../../GlobalComponents/Footer/Footer';
 
 const Home = () => {
 
@@ -43,6 +48,12 @@ const Home = () => {
         { title: "Satisfied Clients", number: "45" },
         { title: "Years of Experience", number: "15" },
         { title: "Award Winning", number: "37" }
+    ]
+
+    const blogs = [
+        {title: "Have You Heard? Agency Is Your Best Bet To Grow", thumbnail: thumb1, date: '28, February, 2021', category: 'web design', id: 1},
+        {title: "Nemo enim ipsam voluptatem quia voluptas.", thumbnail: thumb2, date: '27, February, 2021', category: 'graphic design', id: 2},
+        {title: "I must explain to you how all this mistaken idea", thumbnail: thumb3, date: '26, February, 2021', category: 'web design', id: 3},
     ]
 
     return (
@@ -234,6 +245,31 @@ const Home = () => {
                     </div>
                 </Container>
             </section>
+            {/* our blog section */}
+            <section className="our-blog">
+                <Container>
+                    <div className="section-bg-text-container">
+                        <h2 className="section-bg-text">News</h2>
+                    </div>
+                    <SectionIntro
+                        subheading="our blog"
+                        heading="latest news"
+                    />
+                    <div className="recent-blogs">
+                        <Row>
+                            {
+                                blogs.map(blog => <Col xs={12} sm={12} md={6} lg={4} >
+                                    <BlogCard
+                                    blog={blog}
+                                    key={blog.id}
+                                    ></BlogCard>
+                                </Col>)
+                            }
+                        </Row>
+                    </div>
+                </Container>
+            </section>
+            <Footer></Footer>
         </div>
     );
 };

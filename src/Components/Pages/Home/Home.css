@@ -102,7 +102,7 @@
     background-color: #f9f5f3;
 }
 .help-ticket{
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 .help-ticket-contents{
@@ -116,4 +116,7 @@
     color: rgb(41, 39, 39);
     font-weight: 600;
     font-size: 17px;
+}
+.our-blog{
+    padding: 80px 0px;
 }

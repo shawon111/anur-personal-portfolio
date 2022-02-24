@@ -1,0 +1,8 @@
+.about-statistics-section{
+    padding: 60px 0px;
+}
+.about-statistics-container{
+    padding: 70px 20px;
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+}

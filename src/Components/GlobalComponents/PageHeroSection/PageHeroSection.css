@@ -1,0 +1,22 @@
+.page-hero-section{
+    padding: 150px 0px;
+    background-image: url(../../../images/page-hero-bg.jpg), linear-gradient(#0b359677, #0b359677);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-name h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.breadcrumb-main-link{
+    color: #fff;
+}
+.breadcrumb-main-link:hover{
+    color: var(--brandColor);
+    transition: all .3s;
+}
+.breadcrumb-current-link{
+    color: #cbd4fd;
+}

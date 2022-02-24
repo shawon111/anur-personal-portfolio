@@ -3,13 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import HomeHeroSection from './HomeHeroSection/HomeHeroSection';
 import './Home.css';
 import SectionIntro from '../../GlobalComponents/SectionIntro/SectionIntro';
-import ProcessPrimary from './ProcessPrimary/ProcessPrimary';
-import icon1 from '../../../images/process-icon-1.png';
-import icon2 from '../../../images/process-icon-2.png';
-import icon3 from '../../../images/process-icon-3.png';
-import icon4 from '../../../images/process-icon-4.png';
-import ProcessSecondary from './ProcessSecondary/ProcessSecondary';
-import aboutImg from '../../../images/about-section-img.jpg';
 import InnerSectionIntro from '../../GlobalComponents/InnerSectionIntro/InnerSectionIntro';
 import { Link } from 'react-router-dom';
 import offer1 from "../../../images/offer-1.png";
@@ -31,6 +24,9 @@ import thumb2 from '../../../images/project-4.jpg';
 import thumb3 from '../../../images/project-6.jpg';
 import BlogCard from '../../GlobalComponents/BlogCard/BlogCard';
 import Footer from '../../GlobalComponents/Footer/Footer';
+import AboutUs from './AboutUs/AboutUs';
+import WorkProcess from './WorkProcess/WorkProcess';
+import Testimonial from './Testimonial/Testimonial';
 
 const Home = () => {
 
@@ -62,100 +58,14 @@ const Home = () => {
             <HomeHeroSection></HomeHeroSection>
 
             {/* working process section */}
-            <section className="work-process">
-                <Container>
-                    <div className="section-bg-text-container">
-                        <h1 className="section-bg-text">
-                            Work
-                        </h1>
-                    </div>
-                    <SectionIntro
-                        subheading="working process"
-                        heading="how we do our work plan"
-                    >
-                    </SectionIntro>
-                    <Row className='pt-5 work-process-container'>
-                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}><ProcessPrimary
-                            icon={icon1}
-                            iconThumb="1"
-                            processName="Creating a Concept"
-                        /></Col>
-                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}>
-                            <ProcessSecondary
-                                icon={icon2}
-                                iconThumb="2"
-                                processName="Budget Planning"
-                            />
-                        </Col>
-                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}><ProcessPrimary
-                            icon={icon3}
-                            iconThumb="3"
-                            processName="Design Process"
-                        /></Col>
-                        <Col className='work-process-item' xs={12} sm={12} md={6} lg={3}>
-                            <ProcessSecondary
-                                icon={icon4}
-                                iconThumb="4"
-                                processName="Building Your Dream"
-                            />
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+            <WorkProcess></WorkProcess>
 
             {/* about&services section */}
             <section className="about-services-section">
                 <Container>
                     {/* about */}
-                    <div className="about-us">
-                        <Row className='align-items-center about-us-container'>
-                            <Col xs={12} sm={12} md={12} lg="6">
-                                <div className="about-img-col-container">
-                                    <div className="about-img text-center">
-                                        <img src={aboutImg} alt="about-banner" />
-                                        <div className="experience-text d-inline-block">
-                                            <h5 className='d-inline-block text-white'>7 Years Experience</h5>
-                                        </div>
-                                    </div>
-                                    <div className="about-big-circle"></div>
-                                    <div className="about-small-circle"></div>
-                                </div>
-                            </Col>
-                            <Col className='about-texts' xs={12} sm={12} md={12} lg="6">
-                                <div className="about-contents">
-                                    <div className="section-bg-text-container">
-                                        <h2 className="section-bg-text text-start">About</h2>
-                                    </div>
-                                    <InnerSectionIntro
-                                        subheading="about us"
-                                        heading="We are more than just a"
-                                        brandText="digital agency."
-                                    >
-                                    </InnerSectionIntro>
-                                    <p className='my-4 text-secondary'>We create award-winning websites, remarkable brands and cutting-edge apps. Nullam imperdiet, sem at fringilla lobortis, sem nibh fringilla nibh.</p>
-
-                                    <div className="about-list-container">
-                                        <ul>
-                                            <li className='text-secondary pb-2'>
-                                                Quis ipsum suspendisse ultrices gravida.
-                                            </li>
-                                            <li className='text-secondary pb-2'>
-                                                Risus commodo viverra maecenas accumsan lacus.
-                                            </li>
-                                            <li className='text-secondary pb-2'>
-                                                Incididunt ut labore et dolore magna aliqua.
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="about-section-cta">
-                                        <button className='brand-btn btn mt-4'><Link to="/projects">View Projects</Link></button>
-                                    </div>
-
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
+                    <AboutUs></AboutUs>
+                    {/* services */}
                     <div className="our-services">
                         <div className="section-heading">
                             <div className="section-bg-text-container">
@@ -204,27 +114,7 @@ const Home = () => {
                 </Container>
             </section>
             {/* testimonial section */}
-            <section className="testimonial">
-                <Container>
-                    <div className="testimonial-container">
-                        <Row>
-                            <Col xs={12} sm={12} md={5} lg={4} className="testimonial-heading" >
-                                <InnerSectionIntro
-                                    subheading="testimonial"
-                                    heading="What People Says"
-                                ></InnerSectionIntro>
-                                <p className='me-5 mt-3 text-secondary'>We met years ago at an advertising agency where we learned a ton of dos and some don’ts.</p>
-                                <button className='btn brand-btn brand-bg-btn mt-2'>
-                                    <Link to="/">Contact Us</Link>
-                                </button>
-                            </Col>
-                            <Col xs={12} sm={12} md={7} lg={8} className="testimonial-slider" >
-                                <TestimonialSlider></TestimonialSlider>
-                            </Col>
-                        </Row>
-                    </div>
-                </Container>
-            </section>
+            <Testimonial></Testimonial>
             {/* help-ticket section */}
             <section className="help-ticket">
                 <Container>

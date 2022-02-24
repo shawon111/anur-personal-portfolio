@@ -96,7 +96,7 @@ const Footer = () => {
                 </Container>
             </div>
             <div className="footer-bottom">
-                <p className='text-white m-0 text-center'>Copyright © 2021 anur by wpOceans. All Rights Reserved.</p>
+                <p className='text-white m-0 text-center'><small>Developed by Shawon Ahmmed. All Rights Reserved.</small></p>
             </div>
         </footer>
     );

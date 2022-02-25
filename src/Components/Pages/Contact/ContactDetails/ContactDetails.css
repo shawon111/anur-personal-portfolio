@@ -1,0 +1,26 @@
+.contact-details{
+    padding: 100px 0px;
+}
+.contact-details-container{
+    margin: 0px 100px 0px 100px;
+}
+.details-box{
+    box-shadow: 0px 0px 6px 0px #d9ddf5f0;
+    padding: 50px;
+}
+.details-title{
+    color: var(--primaryColor);
+    margin-bottom: 18px;
+}
+.details-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    line-height: 95px;
+    margin-bottom: 22px;
+}
+.details-icon svg{
+    font-size: 38px;
+    color: #989898;
+}

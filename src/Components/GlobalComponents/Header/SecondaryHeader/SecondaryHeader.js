@@ -20,7 +20,7 @@ const SecondaryHeader = () => {
 
     window.addEventListener("scroll", stickyEffect);
     return (
-        <Navbar collapseOnSelect expand="lg" className={isSticky ? "secondary-header pt-3 secondary-sticky-header" : "secondary-header pt-3"} variant="dark">
+        <Navbar collapseOnSelect expand="lg" className={isSticky ? "secondary-header pt-3 secondary-sticky-header" : "secondary-header pt-3"} variant="light">
             <Container>
                 <Navbar>
                     <div className="logo">

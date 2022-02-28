@@ -1,0 +1,90 @@
+.all-blogs{
+    padding: 40px 0px 100px 0px;
+}
+.blog-all-contents{
+    display: flex;
+    flex-direction: column;
+}
+.blog-sidebar{
+    padding-top: 80px;
+}
+.blog-page-author-card{
+    border: none;
+    background-color: #F4F8FC;
+    padding: 30px;
+}
+.author-profile-image{
+    text-align: center;
+}
+.blog-page-author-card img{
+    width: 65%;
+    border-radius: 50%;
+}
+.author-card-name{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+.author-speech{
+    font-size: 16px;
+}
+.author-social-id ul{
+    padding-left: 0;
+}
+.author-social-id ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    transition: all .3s;
+}
+.author-social-id ul li a{
+    color: var(--primaryColor);
+    transition: all .3s;
+}
+.author-social-id ul li:hover{
+    background-color: var(--brandColor);
+}
+.author-social-id ul li:hover a{
+    color: #fff;
+}
+.sidebar-search-bar{
+    margin-top: 60px;
+}
+
+.sidebar-search-container{
+    background-color: #FFFBF2;
+    padding: 15px 0px;
+}
+
+.sidebar-search-field{
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    padding-left: 20px;
+}
+.sidebar-search-container .form-control:focus{
+    box-shadow: none;
+    background-color: transparent;
+}
+.sidebar-search-container:focus{
+    background-color: red;
+}
+.sidebar-search-btn{
+    padding: 10px 15px;
+    background-color: var(--brandColor);
+    margin-right: 10px;
+    border-radius: 5px!important;
+    color: #fff;
+    transition: all .3s;
+}
+.sidebar-search-btn:hover{
+    background-color: var(--primaryColor);
+    color: #fff;
+}

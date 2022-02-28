@@ -16,7 +16,7 @@ const {title, category, id, image} = portfolioItem;
                 <div className="portfolio-item-details">
                     <h3 className="portfolio-item-title text-white">{title}</h3>
                     <h6 className='portfolio-item-category text-white fw-normal'>{category}</h6>
-                    <Link className='portfolio-item-btn' to={`portfolio/${id}`}>View Work</Link>
+                    <Link className='portfolio-item-btn' to={`/portfolio/${id}`}>View Work</Link>
                 </div>
             </div>
         </Col>

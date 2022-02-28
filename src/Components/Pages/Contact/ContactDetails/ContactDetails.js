@@ -6,7 +6,7 @@ import './ContactDetails.css';
 
 const ContactDetails = () => {
     return (
-        <section className="contact-details">
+        <section className="contact-details-section">
             <Container>
                 <div className="contact-details-container">
                     <Row className='g-5'>

@@ -4,3 +4,6 @@
     margin: 0;
     border: 0;
 }
+.contact-map iframe{
+    z-index: 1;
+}
